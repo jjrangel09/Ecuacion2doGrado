@@ -19,11 +19,15 @@ public class CalculaEcuacion {
         byte a = 1;
         byte b = 8;
         byte c = 12;
-        byte x1 = 0;
-        byte x2 = 0;
+        byte x1 ;
+        byte x2 ;
         
-        x1 = (byte) -a; 
-        System.out.println(x1);
+        x1 = (byte) ((byte) (((byte) -b + Math.sqrt((byte)Math.pow(b, 2)-(4*(a+c)))))/(2*a)); 
+        x2 = (byte) ((byte) (((byte) -b - Math.sqrt((byte)Math.pow(b, 2)-(4*(a+c)))))/(2*a)); 
+        
+        System.out.println("Calculo de Ecuacion de Segundo Grado\nX^2+8X+12=0\n");
+        System.out.println("Primera solucion: X1= " + x1);
+        System.out.println("Segunda solucion: X2= " + x2 + "\n");
     }
     
 }
